@@ -1,0 +1,40 @@
+basic code linux
+
+#create folder
+mkdir FOLDERNAME
+
+#create text file
+touch textName.txt
+
+#copy file to another folder(space between)
+cp -r /path/to/directory/. /path/to/location/
+
+#change all permission for work ezy with Vscode
+sudo chmod 777 /opt/lampp/htdocs/linux/basic.txt
+
+#change permission all file in the directory
+sudo chmod -R 777 /root/
+sudo chmod -R <permissions> <directory>
+sudo chmod -R u+rwx <directory> (LIKE => /opt/lampp/htdocs/wordpress/develop/wp-content/).
+sudo chmod -R 777 /opt/lampp/htdocs/wordpress/flatsome/ ( => change permission all file and folder exist in flatsome )
+
+#how to remove folder and files
+rm -r directory/.
+
+#how to instal tar.xz
+
+# resolve a problem of apache stop
+sudo apachectl stop
+
+# kill update stop
+sudo kill -9 1141
+  
+
+#Alternatively, you can also install a .deb file by opening a terminal and typing:
+sudo dpkg -i package_file.deb
+
+#To uninstall a .deb file, remove it using Adept, or type:
+sudo apt-get remove package_name
+
+#crash driver Error Unmount Driver 
+https://learnubuntumate.weebly.com/fix-82038203error-mounting.html

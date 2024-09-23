@@ -1,0 +1,15 @@
+#check git status
+git status
+
+#git add or prepare file to commit
+git add ./ => for add all file project
+
+#git commit new file for new version\
+git commit -m "Description"
+
+#add and commit with one command
+git commit -am "Description"
+
+#check git hub name 
+git remote
+

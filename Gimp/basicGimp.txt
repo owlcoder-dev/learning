@@ -1,0 +1,2 @@
+# how turn off all guide line in gimp 
+cntrl + shift + t
