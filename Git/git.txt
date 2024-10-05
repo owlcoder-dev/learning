@@ -13,3 +13,91 @@ git commit -am "Description"
 #check git hub name 
 git remote
 
+**** **** **** ****
+
+#create git project or repository
+git init
+
+#add new file and directory to stage
+git add . or git add "name-file"
+
+#add to repository with commit
+git commit -m "say comment for file"
+
+#add and commit with oneline command
+git commit -am "<description txt>"
+
+#check status of stage and workspace
+git status
+
+#check all repository log
+git log
+#can see graph --graph OR can see oneline with --oneline OR can see all repository with --all
+git log --all --oneline --graph
+
+#can see all branch
+git branch
+
+#create new branch
+git branch "nameNewBranch"
+
+#switch between branchs
+git switch "nameTargetBranch"
+
+#switch and create branch 
+git switch -c "nameNewBranch"
+
+#merg two branch toghether -- your branch and picked branch
+git merge "branchName"
+
+#diff command for check stage with workspace
+git diff
+
+#diff --staged for compare last commit with Staging Area
+git diff --staged
+
+#diff HEAD compare last commit and workspace
+git diff HEAD
+
+#diff compare two commit 
+git diff hashCommit1..hashCommit2
+
+#how return to choosen commit
+git checkout "nameCommit"
+#come back to now
+git switch master
+OR
+#go to HEAD
+git checkout HEAD
+
+#discord change
+git restore <filename>
+#discord change in staged
+git restore --staged <filename>
+
+#reset just for delete commit and workspace is not change
+git reset <commitName>
+ #reset just for delete commit and workspace delete
+git reset --hard <commitName>
+
+#revert like reset but you merge to past
+git revert <commitName>
+
+#stash command : save - pop - apply
+#stash like commit but dont realse in repository
+git stash
+#open stash 
+git stash pop
+#apply show all stash toghether
+git stash apply
+
+#saves stash 
+git stash save "description"
+#list saved stash
+git stash list
+git stash apply stash@{id}
+
+#delete stash
+git stash drop stash@{id}
+#delete all stashs WARNNING! DELETE ALL STASH
+git stash clear
