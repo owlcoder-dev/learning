@@ -1,0 +1,7 @@
+shortcut for linux
+
+1. open new vscode window
+cntrl + shift + m 
+
+2. auto prefix or clean code in vscode linux
+command + shift + i
